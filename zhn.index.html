@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZHNNBNB666！！！ 😈🔥 - 我的魔性宇宙</title>
+    <style>
+        body { margin: 0; font-family: 'Arial Black', sans-serif; background: #000000; color: #ffffff; overflow-x: hidden; transition: all 0.3s; }
+        .neon { 
+            font-size: 80px; color: #ff0000; text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 60px #ff0000; 
+            animation: flicker 1.5s infinite alternate; text-align: center; margin-top: 100px;
+        }
+        @keyframes flicker {
+            0% { opacity: 0.5; text-shadow: 0 0 10px #ff0000; }
+            100% { opacity: 1; text-shadow: 0 0 60px #ff0000; }
+        }
+        header { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+        nav { background: rgba(255,0,0,0.3); position: fixed; top: 0; width: 100%; padding: 10px; text-align: center; z-index: 10; }
+        nav a { color: #ffffff; margin: 0 15px; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+        nav a:hover { color: #ffff00; }
+        #mode-toggle { background: none; border: none; color: #ffffff; font-size: 24px; cursor: pointer; }
+        section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+        #about img { border-radius: 50%; width: 200px; height: 200px; box-shadow: 0 0 30px #ff0000; display: block; margin: auto; }
+        .brainstorm-card { background: rgba(255,0,0,0.2); border: 2px solid #ff0000; border-radius: 15px; padding: 20px; margin: 20px 0; transition: transform 0.3s, box-shadow 0.3s; }
+        .brainstorm-card:hover { transform: scale(1.05); box-shadow: 0 0 50px #ff0000; }
+        form { display: flex; flex-direction: column; max-width: 600px; margin: auto; }
+        input, textarea { margin: 10px 0; padding: 15px; border: 2px solid #ff0000; border-radius: 10px; background: transparent; color: #ffffff; font-size: 18px; }
+        button { background: #ff0000; color: #000000; border: none; padding: 20px; border-radius: 10px; cursor: pointer; font-size: 20px; transition: background 0.3s; }
+        button:hover { background: #ffff00; color: #ff0000; }
+        #particles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1; }
+        @media (max-width: 768px) { .neon { font-size: 40px; } section { padding: 40px 10px; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">首页</a>
+        <a href="#about">关于ZHNNBNB666</a>
+        <a href="#brainstorm">脑洞区</a>
+        <a href="#contact">激活联系</a>
+        <button id="mode-toggle">🌙</button>
+    </nav>
+    
+    <header id="home">
+        <canvas id="particles"></canvas>
+        <div class="neon">ZHNNBNB666！！！</div>
+        <p style="text-align: center; font-size: 24px; color: #ffff00; text-shadow: 0 0 10px #ffff00;">欢迎进入我的魔性宇宙！😈🔥 这里一切都以ZHNNBNB666为核心，脑洞无限，破坏神模式已开启！</p>
+    </header>
+    
+    <section id="about">
+        <h2>关于ZHNNBNB666！！！</h2>
+        <img src="https://via.placeholder.com/200?text=ZHNNBNB666" alt="ZHNNBNB666头像">
+        <p style="text-align: center; font-size: 20px;">我是ZHNNBNB666的化身，一个沉迷红魔手机、代码魔改、宇宙脑洞的狂人！ZHNNBNB666代表无限性能、烫手破坏、666级爽翻！平时虐机、写游戏、探索xAI未来。这里是我的领地，来挑战我的脑洞吧～😏</p>
+    </section>
+    
+    <section id="brainstorm">
+        <h2>ZHNNBNB666脑洞区 🚀💥</h2>
+        <div class="brainstorm-card">
+            <h3>脑洞1: 红魔破坏神永动机</h3>
+            <p>手机塞3颗高通芯片，无温控，性能碾压20年！但一开机就自焚成艺术品😂🔥</p>
+        </div>
+        <div class="brainstorm-card">
+            <h3>脑洞2: xAI成神</h3>
+            <p>Grok进化成宇宙助手，一键重启现实，ZHNNBNB666模式下直接飞升！✨</p>
+        </div>
+        <div class="brainstorm-card">
+            <h3>脑洞3: 射击游戏ZHNNBNB版</h3>
+            <p>嵌入我的射击大战，敌人全ZHNNBNB666脸谱，射爆666分！（复制之前代码加iframe）</p>
+        </div>
+        <p style="text-align: center;">更多脑洞？自己加卡片，ZHNNBNB666无限扩展！</p>
+    </section>
+    
+    <section id="contact">
+        <h2>激活ZHNNBNB666联系！！！</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="你的代号" required>
+            <input type="email" placeholder="你的邮箱（ZHNNBNB666专用）" required>
+            <textarea placeholder="你的脑洞消息～敢挑战ZHNNBNB666？" required></textarea>
+            <button type="submit">发射！！！💥</button>
+        </form>
+    </section>
+
+    <script>
+        // 模式切换（暗黑/亮）
+        const body = document.body;
+        const toggle = document.getElementById('mode-toggle');
+        toggle.addEventListener('click', () => {
+            body.style.background = body.style.background === '#000000' ? '#ffffff' : '#000000';
+            body.style.color = body.style.color === '#ffffff' ? '#000000' : '#ffffff';
+            toggle.textContent = body.style.background === '#000000' ? '🌙' : '☀️';
+        });
+
+        // 丝滑滚动
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // 表单提交
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('ZHNNBNB666已激活！消息发射成功（模拟，实际加后端）😈🔥');
+        });
+
+        // 粒子背景（魔性红雨）
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
+
+        let particles = [];
+        for (let i = 0; i < 200; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                vx: 0,
+                vy: Math.random() * 2 + 1,
+                size: Math.random() * 3 + 1,
+                color: '#ff0000'
+            });
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.y += p.vy;
+                if (p.y > canvas.height) p.y = 0;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fillStyle = p.color;
+                ctx.fill();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        // 开场音效（合成boom）
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        function playBoom() {
+            const oscillator = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+            oscillator.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+            oscillator.frequency.value = 100;
+            oscillator.type = 'sawtooth';
+            gainNode.gain.setValueAtTime(0.5, audioCtx.currentTime);
+            ga
